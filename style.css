@@ -1,0 +1,128 @@
+html,body {
+    margin: 0;
+    padding:0;
+
+}
+
+body::-webkit-scrollbar {
+    display:none;
+}
+
+
+#topbar {
+    display:flex;
+    background-color:black;
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+}
+
+#topbar h2 {
+    font-size:25px;
+    
+}
+
+@keyframes fadeIn {
+    from {
+        color: rgba(255, 255, 255, 0);
+        text-shadow: none;
+    }
+  
+    to {
+      color: rgba(255, 255, 255, 1);
+      text-shadow: 0px 4px 12px black;
+    }
+  }
+
+#home-text {
+    animation: fadeIn 4s;
+}
+
+
+
+h2,p {
+    font-family: Oswald, sans-serif;
+    color: white;
+}
+
+
+#topbar h2 {
+    color: red;
+}
+#home {
+    background-color: #212121;
+    height: 100%;
+    width: 100%;
+    background: url("images/home0.jpg.png");
+    background-position-x: 50%;
+    background-size: cover;
+}
+#main-gen {
+    background-color: #212121;
+    height: calc(100% - 60px);
+    width: 100%;
+    background-color:black;
+    background-size: cover;;
+    background-position-x: 50%;
+}
+#results {
+    background-color: #212121;
+    height: calc(100% - 60px);
+    width: 100%;
+    background-color:black;
+    background-size: cover;;
+    background-position-x: 50%;
+}
+
+#main-gen #panel {
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 800px;
+    width:1200px;
+    border-radius: 70px;;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: 0;
+    font-size: 18px;
+    font-family: Oswald, sans-serif;
+    width:130px;
+    height:50px;
+    border-radius: 0;
+    cursor:pointer;
+    transition: 0.2s;
+}
+
+button:hover{
+    width:160px;
+    background-color: red;
+    COLOR: WHITE;
+}
+
+#main-gen p {
+    font-size: 25px;
+}
+
+#main-gen select {
+    display: block;
+    border:0;
+    appearance: none;
+    outline: none;
+    font-family: Oswald, sans-serif;
+    font-weight: 600;
+    padding:5px;
+    padding-left:20px;
+    width: 350px;
+    height:50px;
+}
+
+#spotifybutton:hover {
+    width:160px;
+    background-color: greenyellow;
+    COLOR: black;
+}
+
